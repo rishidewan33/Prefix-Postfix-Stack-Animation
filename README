@@ -1,0 +1,3 @@
+Prefix/Postfix Notation Stack Animation Application
+
+This is a C# WPF Program that, given a mathematical equation, animates it's evaluation using a Stack.
