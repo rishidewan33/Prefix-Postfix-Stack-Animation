@@ -1,0 +1,13 @@
+C:\Users\Rishi\Documents\Visual Studio 2010\Projects\PFNSAppRevised\bin\Debug\PFNSAppRevised.exe
+C:\Users\Rishi\Documents\Visual Studio 2010\Projects\PFNSAppRevised\bin\Debug\PFNSAppRevised.pdb
+C:\Users\Rishi\Documents\Visual Studio 2010\Projects\PFNSAppRevised\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Rishi\Documents\Visual Studio 2010\Projects\PFNSAppRevised\obj\x86\Debug\MainWindow.baml
+C:\Users\Rishi\Documents\Visual Studio 2010\Projects\PFNSAppRevised\obj\x86\Debug\MainWindow.g.cs
+C:\Users\Rishi\Documents\Visual Studio 2010\Projects\PFNSAppRevised\obj\x86\Debug\App.g.cs
+C:\Users\Rishi\Documents\Visual Studio 2010\Projects\PFNSAppRevised\obj\x86\Debug\PFNSAppRevised_MarkupCompile.cache
+C:\Users\Rishi\Documents\Visual Studio 2010\Projects\PFNSAppRevised\obj\x86\Debug\PFNSAppRevised.g.resources
+C:\Users\Rishi\Documents\Visual Studio 2010\Projects\PFNSAppRevised\obj\x86\Debug\PFNSAppRevised.Properties.Resources.resources
+C:\Users\Rishi\Documents\Visual Studio 2010\Projects\PFNSAppRevised\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Rishi\Documents\Visual Studio 2010\Projects\PFNSAppRevised\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Rishi\Documents\Visual Studio 2010\Projects\PFNSAppRevised\obj\x86\Debug\PFNSAppRevised.exe
+C:\Users\Rishi\Documents\Visual Studio 2010\Projects\PFNSAppRevised\obj\x86\Debug\PFNSAppRevised.pdb
