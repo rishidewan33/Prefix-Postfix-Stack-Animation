@@ -9,7 +9,7 @@ using System.Windows.Media.Animation;
 
 namespace PFNSAppRevised
 {
-    public enum Notation
+    enum Notation
     {
         Prefix, Postfix
     }
@@ -19,7 +19,10 @@ namespace PFNSAppRevised
     /// </summary>
     public partial class MainWindow : Window
     {
+        /// <summary>Height of the rectangle that the element is stored.</summary>
         public const int RECTANGLE_HEIGHT = 25;
+
+        /// <summary>A list of available operations</summary>
         public static readonly String[] operations = { "+", "-", "*", "/" };
 
         private Stack<String> TokenStack;
@@ -32,6 +35,10 @@ namespace PFNSAppRevised
         private bool CurrentlyAnimating;
         private Notation notation;
 
+
+        /// <summary>
+        /// Default Application Constructor
+        /// </summary>
         public MainWindow()
         {
             InitializeComponent();
@@ -45,7 +52,13 @@ namespace PFNSAppRevised
             StackSize = (int)StackCanvas.Height/RECTANGLE_HEIGHT;
         }
 
-        private bool IsValidElement(string elem)
+
+        /// <summary>
+        /// Determines if the element is a valid string representation of a number or arithmetic operation
+        /// </summary>
+        /// <param name="elem">The element being checked</param>
+        /// <returns>If the element is valid</returns>
+        private static bool IsValidElement(string elem)
         {
             if (String.IsNullOrEmpty(elem)) return false;
             if (operations.Contains(elem)) return true;
@@ -132,6 +145,7 @@ namespace PFNSAppRevised
             sb.Completed += new EventHandler(completedEvent);
             sb.Children.Add(ta);
             sb.Begin(this);
+            sb.Children.Remove(ta);
         }
 
         private void ResetValues()
@@ -144,11 +158,11 @@ namespace PFNSAppRevised
             StackCanvas.Children.Clear();
         }
 
-        public void Push_Completed(object sender, EventArgs e)
+        private void Push_Completed(object sender, EventArgs e)
         {
             if (operations.Contains(TokenStack.Peek()))
             {
-                int result, op1, op2;
+                long result, op1, op2;
                 String op = TokenStack.Pop();
                 try
                 {
